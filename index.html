@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="uz">
 <head>
@@ -7,63 +6,58 @@
   <title>Abdulaziz & Azizaxon — Wedding Invitation</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
       --ivory: #fbf8f1;
-      --cream: #f2eadb;
-      --gold: #bd9958;
+      --cream: #f3ecdf;
+      --gold: #b89552;
       --dark-gold: #92713a;
       --text: #514637;
       --muted: #8c806f;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background: var(--ivory);
       color: var(--text);
+      background: var(--ivory);
       font-family: 'Montserrat', sans-serif;
       text-align: center;
     }
 
     .hero {
-      min-height: 100vh;
-      padding: 65px 20px;
+      min-height: 88vh;
+      padding: 65px 20px 55px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      background:
+        radial-gradient(ellipse at top, #fffdf8 0%, transparent 70%),
+        linear-gradient(145deg, #fbf8f1, #f1e8d9);
       position: relative;
       overflow: hidden;
-      background:
-        radial-gradient(ellipse at top, #fffefa 0%, transparent 70%),
-        linear-gradient(145deg, #fbf8f1, #f0e5d2);
     }
 
-    .hero::before,
-    .hero::after {
+    .hero::before, .hero::after {
       content: "❧";
       position: absolute;
-      color: rgba(189,153,88,.22);
-      font-size: 130px;
-      pointer-events: none;
+      color: rgba(184,149,82,.22);
+      font-size: 115px;
     }
 
     .hero::before {
-      top: 20px;
-      left: 15px;
+      top: 25px;
+      left: 12px;
       transform: rotate(-35deg);
     }
 
     .hero::after {
-      bottom: 10px;
-      right: 15px;
+      bottom: 15px;
+      right: 12px;
       transform: rotate(145deg);
     }
 
@@ -72,88 +66,48 @@
       letter-spacing: 5px;
       text-transform: uppercase;
       font-size: 11px;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
 
     .names {
       font-family: 'Great Vibes', cursive;
       color: var(--gold);
-      font-size: clamp(65px, 12vw, 115px);
-      line-height: 1.25;
-      font-weight: 400;
+      font-size: clamp(58px, 11vw, 105px);
+      line-height: 1.2;
       margin: 0;
-      text-shadow: 1px 2px 3px rgba(120, 85, 35, .08);
-    }
-
-    .names span {
-      display: block;
-      text-transform: capitalize;
+      font-weight: 400;
     }
 
     .ampersand {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 39px;
-      font-style: italic;
+      font-size: 38px;
       color: var(--dark-gold);
-      margin: 3px 0;
-    }
-
-    .ornament {
-      color: var(--gold);
-      font-size: 25px;
-      margin: 16px 0;
+      margin: 8px 0;
     }
 
     .invite-text {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 25px;
-      line-height: 1.5;
-      max-width: 520px;
-      margin: 18px 0 10px;
-    }
-
-    .islamic-quote {
-      max-width: 570px;
-      margin: 22px auto;
-      padding: 20px 25px;
-      border-top: 1px solid rgba(189,153,88,.5);
-      border-bottom: 1px solid rgba(189,153,88,.5);
-    }
-
-    .arabic {
-      font-family: 'Amiri', serif;
-      font-size: 29px;
-      line-height: 1.9;
-      color: var(--dark-gold);
-      direction: rtl;
-    }
-
-    .translation {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 20px;
-      line-height: 1.6;
-      color: var(--text);
-      margin-top: 8px;
-    }
-
-    .verse-reference {
-      font-size: 10px;
-      letter-spacing: 1px;
-      color: var(--muted);
-      margin-top: 8px;
+      font-size: 24px;
+      margin: 22px 0 10px;
     }
 
     .date {
       color: var(--dark-gold);
       font-family: 'Cormorant Garamond', serif;
-      font-size: 30px;
+      font-size: 27px;
       margin: 12px 0 5px;
     }
 
     .time {
       font-size: 13px;
       letter-spacing: 3px;
-      margin: 8px 0 22px;
+      margin: 8px 0 25px;
+    }
+
+    .ornament {
+      color: var(--gold);
+      font-size: 25px;
+      margin: 12px 0;
     }
 
     .music-button {
@@ -161,7 +115,7 @@
       color: var(--dark-gold);
       background: transparent;
       border-radius: 30px;
-      padding: 13px 25px;
+      padding: 11px 22px;
       font-family: 'Montserrat', sans-serif;
       font-size: 11px;
       letter-spacing: 1px;
@@ -172,17 +126,45 @@
     .music-button:hover {
       background: var(--gold);
       color: white;
-      transform: translateY(-2px);
+    }
+
+    .islamic-verse {
+      width: min(620px, 94%);
+      margin: 22px auto 12px;
+      padding: 17px 20px;
+      border-top: 1px solid rgba(184,149,82,.45);
+      border-bottom: 1px solid rgba(184,149,82,.45);
+    }
+
+    .arabic {
+      color: var(--dark-gold);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(22px, 4vw, 30px);
+      line-height: 1.8;
+    }
+
+    .islamic-verse p {
+      color: var(--text);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 8px 0 4px;
+    }
+
+    .islamic-verse span {
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .5px;
     }
 
     section {
-      padding: 70px 20px;
+      padding: 65px 20px;
     }
 
     .section-title {
       font-family: 'Cormorant Garamond', serif;
       color: var(--dark-gold);
-      font-size: 42px;
+      font-size: 39px;
       font-weight: 500;
       margin: 0 0 12px;
     }
@@ -190,8 +172,8 @@
     .section-subtitle {
       color: var(--muted);
       font-size: 12px;
-      line-height: 1.9;
-      margin: 0 auto 38px;
+      line-height: 1.8;
+      margin: 0 auto 35px;
       max-width: 480px;
     }
 
@@ -200,7 +182,7 @@
     }
 
     .cards {
-      max-width: 1000px;
+      max-width: 950px;
       margin: auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -210,25 +192,19 @@
     .card {
       background: var(--ivory);
       border: 1px solid #e8dcc5;
-      padding: 36px 22px;
-      border-radius: 8px;
-      box-shadow: 0 8px 25px rgba(100,75,35,.06);
-      transition: .3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 28px rgba(100,75,35,.1);
+      padding: 34px 22px;
+      border-radius: 4px;
+      box-shadow: 0 8px 25px rgba(100, 75, 35, .05);
     }
 
     .card-icon {
-      font-size: 32px;
+      font-size: 30px;
       margin-bottom: 15px;
     }
 
     .card h3 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 29px;
+      font-size: 27px;
       font-weight: 600;
       color: var(--dark-gold);
       margin: 0 0 12px;
@@ -259,15 +235,15 @@
     .map-button {
       display: inline-block;
       text-decoration: none;
-      padding: 12px 15px;
-      border-radius: 4px;
+      padding: 11px 13px;
+      border-radius: 3px;
       font-size: 10px;
-      letter-spacing: .5px;
+      letter-spacing: .4px;
       transition: .25s;
     }
 
     .google {
-      background: white;
+      background: #fff;
       border: 1px solid #d9c69e;
       color: #725b32;
     }
@@ -285,69 +261,46 @@
 
     .closing {
       background: linear-gradient(145deg, #f4eddf, #fbf8f1);
-      padding: 75px 20px;
+      padding: 70px 20px;
     }
 
     .closing-message {
       font-family: 'Great Vibes', cursive;
-      font-size: 55px;
+      font-size: 43px;
       color: var(--gold);
-      margin: 15px 0;
+      margin: 10px 0;
     }
 
     .closing p {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 20px;
+      font-size: 12px;
       color: var(--muted);
-      line-height: 1.8;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    .closing-names {
-      font-family: 'Great Vibes', cursive;
-      font-size: 48px;
-      color: var(--dark-gold);
-      font-weight: 400;
-      margin-top: 25px;
+      line-height: 1.9;
     }
 
     footer {
-      padding: 22px;
+      padding: 20px;
       font-size: 10px;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       color: var(--muted);
       background: #f4eddf;
     }
 
     @media (max-width: 600px) {
       .hero {
-        min-height: 100vh;
-        padding: 55px 17px;
-      }
-
-      .names {
-        font-size: clamp(62px, 16vw, 88px);
-      }
-
-      .arabic {
-        font-size: 25px;
-      }
-
-      .invite-text {
-        font-size: 22px;
+        min-height: 80vh;
+        padding: 55px 18px;
       }
 
       section {
-        padding: 55px 16px;
+        padding: 50px 16px;
       }
 
       .section-title {
-        font-size: 36px;
+        font-size: 34px;
       }
 
       .card {
-        padding: 30px 17px;
+        padding: 29px 16px;
       }
     }
   </style>
@@ -355,12 +308,11 @@
 
 <body>
 
-  <!-- ASOSIY MA'LUMOTLAR: shu yerdan o'zgartirasiz -->
+  <!-- ASOSIY MA'LUMOTLAR -->
   <script>
     const CONFIG = {
       groom: "Abdulaziz",
       bride: "Azizaxon",
-
       dateText: "26-aprel 2025-yil",
       weddingTime: "18:00",
 
@@ -391,21 +343,23 @@
     <div class="ornament">✦ ❧ ✦</div>
 
     <p class="invite-text">
-      Sizni hayotimizdagi eng baxtli va unutilmas kunimizga taklif qilamiz.
+      Sizni hayotimizdagi eng baxtli kunimizga taklif qilamiz
     </p>
 
-    <div class="islamic-quote">
-      <div class="arabic">
+    <!-- ISLOMIY OYAT -->
+    <div class="islamic-verse">
+
+      <div class="arabic" lang="ar" dir="rtl">
         وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا
       </div>
 
-      <div class="translation">
-        «U sizlar uchun o'zlaringizdan juftlar yaratdi, toki ular bilan orom topishingiz uchun».
-      </div>
+      <p>
+        “U sizlar uchun o‘zlaringizdan juftlar yaratdi,
+        toki ular bilan orom topishingiz uchun”.
+      </p>
 
-      <div class="verse-reference">
-        RUM SURASI, 21-OYAT MAZMUNIDAN
-      </div>
+      <span>Rum surasi, 21-oyat mazmunidan</span>
+
     </div>
 
     <div class="date" id="weddingDate"></div>
@@ -419,6 +373,7 @@
 
   </header>
 
+  <!-- MANZILLAR -->
   <section class="places">
 
     <h2 class="section-title">Manzillar</h2>
@@ -430,62 +385,125 @@
 
     <div class="cards">
 
+      <!-- KUYOVNING UYI -->
       <div class="card">
+
         <div class="card-icon">🏡</div>
+
         <h3>Kuyovning uyi</h3>
-        <p><span id="groomDescription"></span> xonadoniga tashrif</p>
+
+        <p>Abdulazizning xonadoniga tashrif</p>
+
         <p class="arrival">
-          Mehmonlar kelish vaqti: <span id="groomTime"></span>
+          Mehmonlar kelish vaqti: 11:00
         </p>
 
         <div class="map-buttons">
-          <a class="map-button google" id="groomGoogle"
-             target="_blank" rel="noopener">Google Maps</a>
-          <a class="map-button yandex" id="groomYandex"
-             target="_blank" rel="noopener">Yandex Maps</a>
+
+          <a
+            class="map-button google"
+            id="groomGoogle"
+            target="_blank"
+            rel="noopener"
+          >
+            Google Maps
+          </a>
+
+          <a
+            class="map-button yandex"
+            id="groomYandex"
+            target="_blank"
+            rel="noopener"
+          >
+            Yandex Maps
+          </a>
+
         </div>
       </div>
 
+      <!-- KELINNING UYI -->
       <div class="card">
+
         <div class="card-icon">🌸</div>
+
         <h3>Kelinning uyi</h3>
-        <p><span id="brideDescription"></span> xonadoniga tashrif</p>
+
+        <p>Azizaxonning xonadoniga tashrif</p>
+
         <p class="arrival">
-          Mehmonlar kelish vaqti: <span id="brideTime"></span>
+          Mehmonlar kelish vaqti: 13:00
         </p>
 
         <div class="map-buttons">
-          <a class="map-button google" id="brideGoogle"
-             target="_blank" rel="noopener">Google Maps</a>
-          <a class="map-button yandex" id="brideYandex"
-             target="_blank" rel="noopener">Yandex Maps</a>
+
+          <a
+            class="map-button google"
+            id="brideGoogle"
+            target="_blank"
+            rel="noopener"
+          >
+            Google Maps
+          </a>
+
+          <a
+            class="map-button yandex"
+            id="brideYandex"
+            target="_blank"
+            rel="noopener"
+          >
+            Yandex Maps
+          </a>
+
         </div>
       </div>
 
+      <!-- TO'YXONA -->
       <div class="card">
+
         <div class="card-icon">💍</div>
+
         <h3>To'yxona</h3>
+
         <p>To'y tantanamiz bo'lib o'tadigan manzil</p>
+
         <p class="arrival">
-          To'y boshlanish vaqti: <span id="hallTime"></span>
+          To'y boshlanish vaqti: 18:00
         </p>
 
         <div class="map-buttons">
-          <a class="map-button google" id="hallGoogle"
-             target="_blank" rel="noopener">Google Maps</a>
-          <a class="map-button yandex" id="hallYandex"
-             target="_blank" rel="noopener">Yandex Maps</a>
+
+          <a
+            class="map-button google"
+            id="hallGoogle"
+            target="_blank"
+            rel="noopener"
+          >
+            Google Maps
+          </a>
+
+          <a
+            class="map-button yandex"
+            id="hallYandex"
+            target="_blank"
+            rel="noopener"
+          >
+            Yandex Maps
+          </a>
+
         </div>
       </div>
 
     </div>
   </section>
 
+  <!-- YAKUNIY QISM -->
   <section class="closing">
 
     <div class="ornament">✦ ❧ ✦</div>
 
-    <div class="closing-message">Sizni kutamiz!</div>
+    <div class="closing-message">
+      Sizni kutamiz!
+    </div>
 
     <p>
       Ushbu quvonchli kunimizda yonimizda bo'lishingiz
@@ -494,7 +512,9 @@
 
     <div class="ornament">❦</div>
 
-    <h2 class="closing-names" id="closingNames"></h2>
+    <h2 class="section-title" style="font-size:32px">
+      Abdulaziz & Azizaxon
+    </h2>
 
   </section>
 
@@ -502,144 +522,103 @@
     WITH LOVE · ABDULAZIZ & AZIZAXON
   </footer>
 
-  <script>
-    // Ma'lumotlarni sahifaga joylash
-    document.getElementById("groomName").textContent = CONFIG.groom;
-    document.getElementById("brideName").textContent = CONFIG.bride;
+  <!-- MUSIQA FAYLI -->
+  <audio
+    id="weddingMusic"
+    src="vafodorim.mp3"
+    preload="none"
+  ></audio>
 
-    document.getElementById("weddingDate").textContent = CONFIG.dateText;
+  <script>
+
+    // ISMLAR VA SANANI JOYLASHTIRISH
+
+    document.getElementById("groomName").textContent =
+      CONFIG.groom;
+
+    document.getElementById("brideName").textContent =
+      CONFIG.bride;
+
+    document.getElementById("weddingDate").textContent =
+      CONFIG.dateText;
+
     document.getElementById("weddingTime").textContent =
       "SOAT " + CONFIG.weddingTime;
 
-    document.getElementById("groomDescription").textContent = CONFIG.groom;
-    document.getElementById("brideDescription").textContent = CONFIG.bride;
 
-    document.getElementById("groomTime").textContent = CONFIG.groomTime;
-    document.getElementById("brideTime").textContent = CONFIG.brideTime;
-    document.getElementById("hallTime").textContent = CONFIG.weddingTime;
+    // XARITA HAVOLALARI
 
-    document.getElementById("closingNames").textContent =
-      CONFIG.groom + " & " + CONFIG.bride;
+    document.getElementById("groomGoogle").href =
+      CONFIG.groomGoogle;
 
-    document.getElementById("groomGoogle").href = CONFIG.groomGoogle;
-    document.getElementById("groomYandex").href = CONFIG.groomYandex;
-    document.getElementById("brideGoogle").href = CONFIG.brideGoogle;
-    document.getElementById("brideYandex").href = CONFIG.brideYandex;
-    document.getElementById("hallGoogle").href = CONFIG.hallGoogle;
-    document.getElementById("hallYandex").href = CONFIG.hallYandex;
+    document.getElementById("groomYandex").href =
+      CONFIG.groomYandex;
+
+    document.getElementById("brideGoogle").href =
+      CONFIG.brideGoogle;
+
+    document.getElementById("brideYandex").href =
+      CONFIG.brideYandex;
+
+    document.getElementById("hallGoogle").href =
+      CONFIG.hallGoogle;
+
+    document.getElementById("hallYandex").href =
+      CONFIG.hallYandex;
 
 
-    // Original piano va strings uslubidagi fon musiqasi
-    let audioContext;
-    let musicTimer;
-    let musicPlaying = false;
-    let noteIndex = 0;
+    // VAFODORIM MUSIQASINI BOSHQARISH
 
-    const chords = [
-      [261.63, 329.63, 392.00],
-      [220.00, 261.63, 329.63],
-      [174.61, 220.00, 261.63],
-      [196.00, 246.94, 293.66]
-    ];
+    const music = document.getElementById("weddingMusic");
 
-    const melody = [
-      392.00, 440.00, 523.25, 440.00,
-      392.00, 329.63, 349.23, 392.00
-    ];
+    const musicButton =
+      document.getElementById("musicButton");
 
-    function playPiano(frequency, delay = 0) {
-      const now = audioContext.currentTime + delay;
-
-      const oscillator = audioContext.createOscillator();
-      const gain = audioContext.createGain();
-
-      oscillator.type = "triangle";
-      oscillator.frequency.value = frequency;
-
-      gain.gain.setValueAtTime(0.0001, now);
-      gain.gain.exponentialRampToValueAtTime(0.045, now + 0.025);
-      gain.gain.exponentialRampToValueAtTime(0.0001, now + 1.5);
-
-      oscillator.connect(gain);
-      gain.connect(audioContext.destination);
-
-      oscillator.start(now);
-      oscillator.stop(now + 1.6);
-    }
-
-    function playStrings(frequency) {
-      const now = audioContext.currentTime;
-
-      const oscillator = audioContext.createOscillator();
-      const filter = audioContext.createBiquadFilter();
-      const gain = audioContext.createGain();
-
-      oscillator.type = "sawtooth";
-      oscillator.frequency.value = frequency / 2;
-
-      filter.type = "lowpass";
-      filter.frequency.value = 650;
-
-      gain.gain.setValueAtTime(0.0001, now);
-      gain.gain.linearRampToValueAtTime(0.012, now + 0.7);
-      gain.gain.linearRampToValueAtTime(0.0001, now + 2.8);
-
-      oscillator.connect(filter);
-      filter.connect(gain);
-      gain.connect(audioContext.destination);
-
-      oscillator.start(now);
-      oscillator.stop(now + 2.9);
-    }
-
-    function playMusicPart() {
-      if (!audioContext || audioContext.state !== "running") return;
-
-      const chord = chords[noteIndex % chords.length];
-
-      chord.forEach((frequency, index) => {
-        playPiano(frequency, index * 0.18);
-      });
-
-      playStrings(chord[0]);
-
-      const melodyNote = melody[noteIndex % melody.length];
-      playPiano(melodyNote, 0.65);
-
-      noteIndex++;
-    }
-
-    const musicButton = document.getElementById("musicButton");
 
     musicButton.addEventListener("click", async () => {
-      const AudioContextClass =
-        window.AudioContext || window.webkitAudioContext;
 
-      if (!AudioContextClass) {
-        musicButton.textContent = "Brauzer musiqani qo'llab-quvvatlamaydi";
-        return;
-      }
+      if (music.paused) {
 
-      if (!audioContext) {
-        audioContext = new AudioContextClass();
-      }
+        try {
 
-      if (!musicPlaying) {
-        await audioContext.resume();
+          await music.play();
 
-        playMusicPart();
-        musicTimer = setInterval(playMusicPart, 2800);
+          musicButton.textContent =
+            "♫ Musiqani to‘xtatish";
 
-        musicPlaying = true;
-        musicButton.textContent = "♫ Musiqani o'chirish";
+        } catch (error) {
+
+          musicButton.textContent =
+            "Musiqani qayta yoqing";
+
+          console.error(
+            "Audio ijro etilmadi:",
+            error
+          );
+
+        }
+
       } else {
-        clearInterval(musicTimer);
-        await audioContext.suspend();
 
-        musicPlaying = false;
-        musicButton.textContent = "♫ Musiqani yoqish";
+        music.pause();
+
+        musicButton.textContent =
+          "♫ Musiqani yoqish";
+
       }
+
     });
+
+
+    // MUSIQA TUGAGANDA TUGMANI QAYTARISH
+
+    music.addEventListener("ended", () => {
+
+      musicButton.textContent =
+        "♫ Musiqani yoqish";
+
+    });
+
   </script>
 
 </body>
