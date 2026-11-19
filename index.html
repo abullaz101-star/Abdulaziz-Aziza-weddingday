@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A & B — Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#fbf7ef;--gold:#b58a48;--ink:#604629;--muted:#927a5a}
+*{box-sizing:border-box}body{margin:0;background:var(--ivory);color:var(--ink);font-family:Montserrat,sans-serif}
+.hero{min-height:85vh;display:grid;place-items:center;text-align:center;padding:90px 20px;background:radial-gradient(ellipse at center,#fffdf8 0,#f8edda 60%,#ead7b8 100%);position:relative}
+.monogram{position:absolute;top:25px;left:28px;font:38px 'Great Vibes';color:var(--gold)}
+.hero h1{font:clamp(80px,14vw,145px)/1 'Great Vibes';font-weight:400;color:#9b7138;margin:25px 0}
+.eyebrow{letter-spacing:5px;text-transform:uppercase;font-size:11px;color:var(--muted)}
+.hero p{font:24px 'Cormorant Garamond';margin:12px}
+.date{font:26px 'Cormorant Garamond';margin-top:28px}
+.ornament{color:var(--gold);font-size:27px;margin:18px}
+.section{max-width:1100px;margin:auto;padding:65px 20px;text-align:center}
+h2{font:42px 'Cormorant Garamond';font-weight:500;margin:0 0 12px}
+.sub{font-size:11px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fffdf8;border:1px solid #c9a86d;border-radius:18px;padding:30px 20px;box-shadow:0 14px 35px #80603918}
+.symbol{width:65px;height:65px;border-radius:50%;display:grid;place-items:center;margin:auto auto 16px;background:#f4ead7;border:1px solid #dfc48e;font-size:28px}
+.card h3{font:29px 'Cormorant Garamond';margin:0 0 12px}
+.card p{font-size:12px;line-height:1.7;color:var(--muted)}
+.btn{display:inline-block;margin:7px 3px 0;text-decoration:none;border-radius:30px;padding:11px 15px;font-size:10px;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--gold);color:var(--ink)}
+.btn.primary{background:linear-gradient(120deg,#9e702f,#d3b16d);color:white;border:0}
+footer{text-align:center;padding:60px 20px 75px;background:linear-gradient(#f3e7d2,#ead7b8)}
+footer p{font:italic 24px 'Cormorant Garamond'}
+.signature{font:40px 'Great Vibes';color:#9b7138}
+@media(max-width:760px){.cards{grid-template-columns:1fr;max-width:430px;margin:auto}.hero{min-height:78vh}.section{padding:50px 18px}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="monogram">A & B</div>
+<div><div class="eyebrow">Together forever</div><div class="ornament">♡</div>
+<h1>A & B</h1><p>You are cordially invited to our wedding</p>
+<div class="ornament">— ❦ —</div><div class="date">November 1, 2026</div>
+<p style="font-style:italic">Two hearts. One beautiful journey.</p></div>
+</header>
+<section class="section">
+<h2>We warmly invite you</h2><div class="sub">Celebrate this special day with us</div>
+<div class="cards">
+<article class="card"><div class="symbol">⌂</div><h3>Groom's House</h3><p>Address will be added soon<br>Guest arrival time: To be confirmed</p><a class="btn primary" href="#">Google Maps</a><a class="btn" href="#">Yandex Maps</a></article>
+<article class="card"><div class="symbol">⌂</div><h3>Bride's House</h3><p>Address will be added soon<br>Guest arrival time: To be confirmed</p><a class="btn primary" href="#">Google Maps</a><a class="btn" href="#">Yandex Maps</a></article>
+<article class="card"><div class="symbol">♧</div><h3>Wedding Hall</h3><p>Venue address will be added soon</p><a class="btn primary" href="#">Google Maps</a><a class="btn" href="#">Yandex Maps</a></article>
+</div></section>
+<footer><p>Your presence will make our special day even more memorable.</p><div class="ornament">♡</div><div>With love,</div><div class="signature">A & B</div></footer>
+</body></html>
